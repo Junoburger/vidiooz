@@ -3,7 +3,8 @@ import React from "react";
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
-    <div onClick={()=> onVideoSelect(video)} className="video-item item" key={video.etag}>
+    <div onClick={()=> onVideoSelect(video)} className="video-item item" 
+    key={video.etag}>
       <img
         className="ui image"
         src={video.snippet.thumbnails.medium.url}
